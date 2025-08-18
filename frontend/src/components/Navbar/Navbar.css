@@ -58,12 +58,14 @@
 .copper {
   font-weight: bold;
   font-size: 20px;
-  color: white;
+  color: red;
+  margin-left: 25px;
 }
 
 .code {
   font-size: 18px;
-  color: white;
+  color:  whitesmoke;
+  margin-left: 75px;
 }
 
 .nav-menu {
@@ -74,6 +76,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  
 }
 
 .nav-dropdown {
