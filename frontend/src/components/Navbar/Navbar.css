@@ -1,0 +1,154 @@
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 120px 0;
+}
+
+.nav-stock {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.nav-right-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 120px;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.copper {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.code {
+  font-size: 18px;
+  color: white;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-dropdown button:hover {
+  color: #ccc;
+}
+
+.dropdown-box {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #1a1a1a;
+  padding: 16px;
+  width: 280px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  animation: fadeSlide 0.3s ease-out forwards;
+  z-index: 5;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.search-box {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 300px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
