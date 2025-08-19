@@ -1,4 +1,3 @@
-/* Desktop default (already exists) */
 .nav-wrapper {
   position: relative;
   width: 100%;
@@ -188,63 +187,15 @@
   color: black;
   margin-left: 12px;
 }
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .nav-top {
-    padding: 6px 40px;
-  }
-
+@media (max-width: 480px) {
   .nav-main {
-    padding: 12px 40px;
-  }
-
-  .nav-stock {
-    margin-left: 100px;
+    padding: 8px 12px;
   }
 }
-
-/* Mobile */
 @media (max-width: 768px) {
-  .nav-top {
-    flex-direction: column;
-    gap: 8px;
-    padding: 6px 20px;
-  }
-
-  .nav-main {
+  .nav-top, .nav-main {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    padding: 12px 20px;
+    padding: 8px 20px;
   }
-
-  .nav-title {
-    flex-direction: row;
-    gap: 8px;
-  }
-
-  .copter {
-    font-size: 28px;
-  }
-
-  .code {
-    font-size: 20px;
-    margin-left: 0;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .nav-search {
-    align-self: flex-end;
-  }
-
-  .search-box-overlay {
-    left: 20px;
-    right: 20px;
-  }
-}
+}  
