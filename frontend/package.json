@@ -1,8 +1,5 @@
-
-
 {
   "homepage": "https://MeerasreeT.github.io/React_Project2",
-
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -14,9 +11,9 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "dependencies": {
+    "fullpage.js": "^4.0.37",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

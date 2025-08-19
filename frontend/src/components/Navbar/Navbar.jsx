@@ -1,6 +1,7 @@
 import './Navbar.css';
 import { useState } from 'react';
 import search_icon from '../../assets/search_icon.svg';
+import search_icon2 from '../../assets/search-icon2.svg';
 
 const Navbar = () => {
   const [Dropdownlist, setDropdownlist] = useState(null);
@@ -19,19 +20,19 @@ const Navbar = () => {
     <div className="nav-wrapper">
       <div className="nav-top">
         <div className="nav-stock">
-          <span className="stock">NSE: ₹2,540.50</span>
-          <span className="stock">BSE: ₹2,594.50</span>
+          <span className="stock">NSE ₹2,540.50 (0.39%)</span>
+          <span className="stock">BSE ₹2,594.50 (0.50%)</span>
         </div>
 
         <div className="nav-right-buttons">
-          <button className="nav-btn">e123 | Fraud Alert</button>
-          <button className="nav-btn">Contact</button>
+          <button className="nav-btn">Fraud Alert</button>
+          <button className="nav-btn">Contact us</button>
         </div>
       </div>
 
       <div className="nav-main">
         <div className="nav-title">
-          <span className="copper">Copper</span>
+          <span className="copter">Copter</span>
           <span className="code">Code</span>
         </div>
 
@@ -59,17 +60,25 @@ const Navbar = () => {
             src={search_icon}
             alt="search"
             className="search-icon"
-            onClick={() => setShowSearch(!showSearch)}
+            onClick={() => setShowSearch(true)}
           />
-          {showSearch && (
-            <input
-              type="text"
-              className="search-box"
-              placeholder="Search..."
-            />
-          )}
         </div>
       </div>
+
+      {showSearch && (
+        <div className="search-box-overlay">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search all of Copter..."
+            autoFocus
+          />
+          <button className="search-icon-btn">
+            <img src={search_icon2} alt="search" />
+          </button>
+          <button className="search-close" onClick={() => setShowSearch(false)}>×</button>
+        </div>
+      )}
     </div>
   );
 };

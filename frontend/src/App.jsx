@@ -23,6 +23,7 @@ const App = () => {
     <div className="app-container">
       <Background heroCount={heroCount} />
       <Navbar />
+    
       <Hero
         heroData={heroData}
         heroCount={heroCount}

@@ -8,13 +8,15 @@ const Hero = ({ heroData, heroCount, setHeroCount }) => {
         <div className='hero-text'>
           <p className="growth-line">Growth is Life</p>
 
+          <div className = 'nav-divider'></div>
+
           <div className="hero-buttons-horizontal">
             <div className="hero-explorer">
-              <p>About us</p>
+              <p>about us</p>
               <img src={arrow_btn} alt='arrow' />
             </div>
             <div className="hero-explorer">
-              <p>Our History</p>
+              <p>our  history</p>
               <img src={arrow_btn} alt='arrow' />
             </div>
           </div>

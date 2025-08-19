@@ -16,3 +16,8 @@
 .fade-in {
   animation: fadeIn 500ms ease-in-out;
 }
+@media (max-width: 768px) {
+  .background {
+    object-position: center;
+  }
+}
